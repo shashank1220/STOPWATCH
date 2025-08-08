@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project-01 : STOPWATCH</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="headingBox">
+            <h1>𝙎𝙏𝙊𝙋𝙒𝘼𝙏𝘾𝙃</h1>
+        </div>
+    </header>
+    <main>
+         <div class="container">
+            <p id="displayTime">
+                00:00:00:00
+            </p>
+            <div class="buttonBox">
+                <img src="https://images.icon-icons.com/3641/PNG/512/stop_white_button_icon_227857.png" alt="STOP" id="stop" onclick="watchStop()"/>
+                <img src="https://www.clipartmax.com/png/full/323-3230241_play-icon-start-icon-white-png.png" alt="START"  id="start" onclick="watchStart()"/>
+                <img src="https://img.icons8.com/m_sharp/512/FFFFFF/restart.png" alt="RESET"  id="reset" onclick="watchReset()" />
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

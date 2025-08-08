@@ -1,0 +1,49 @@
+let [miliseconds, seconds, minutes, hours] = [0,0,0,0];
+let displayTime = document.getElementById("displayTime");
+let timer = null;
+let lap = 0;
+
+function stopwatch() {
+    miliseconds++
+    if(miliseconds == 100){
+        seconds++;
+        miliseconds = 0;
+        if(seconds == 60) {
+            seconds = 0;
+            minutes++;
+            if(minutes == 60) {
+                minutes = 0;
+                hours++;
+            }
+        }
+    }
+
+    let ms = miliseconds < 10 ? "0" + miliseconds : miliseconds;
+    let h = hours < 10 ? "0" + hours : hours;
+    let m = minutes < 10 ? "0" + minutes : minutes;
+    let s = seconds < 10 ? "0" + seconds : seconds;
+
+    displayTime.innerHTML = h + " : " + m + " : " + s + " : " + ms;
+};
+
+function watchStart() {
+    if(timer !== null) {
+        clearInterval(timer);
+    }
+    timer = setInterval(stopwatch, 10);
+};
+
+function watchStop() {
+    clearInterval(timer);
+};
+
+function watchReset() {
+    clearInterval(timer);
+    [miliseconds, seconds, minutes, hours] = [0,0,0,0];
+    displayTime.innerHTML = "00 : 00 : 00 : 00";
+};
+
+function displayLap() {
+    console.log(displayTime.innerHTML + " lap - " + (lap++));
+}
+ToggleEvent
