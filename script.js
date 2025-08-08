@@ -1,7 +1,6 @@
 let [miliseconds, seconds, minutes, hours] = [0,0,0,0];
 let displayTime = document.getElementById("displayTime");
 let timer = null;
-let lap = 0;
 
 function stopwatch() {
     miliseconds++
@@ -42,8 +41,3 @@ function watchReset() {
     [miliseconds, seconds, minutes, hours] = [0,0,0,0];
     displayTime.innerHTML = "00 : 00 : 00 : 00";
 };
-
-function displayLap() {
-    console.log(displayTime.innerHTML + " lap - " + (lap++));
-}
-ToggleEvent
