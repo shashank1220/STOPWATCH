@@ -31,15 +31,6 @@ A clean, functional, and lightweight stopwatch built using **HTML**, **CSS**, an
 
 ---
 
-## 📁 Project Structure
-
-📦 STOPWATCH/
-┣ 📜 Stopwatch.html
-┣ 📜 Stopwatch.css
-┗ 📜 Stopwatch.js
-
----
-
 ##  🌱 Future Goals & Improvements
 Here are some ideas planned for future releases:
 <ul>
@@ -60,4 +51,5 @@ Feel free to contribute if you'd like to help build out these features!
     This project is licensed under the MIT License.
 
 ##  👤 Author
+
     Made by SHASHANK PANDEY
